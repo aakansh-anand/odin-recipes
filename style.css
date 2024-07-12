@@ -1,0 +1,73 @@
+@import url(https://db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Norse", sans-serif;
+  padding: 1rem;
+  text-decoration: underline;
+  overflow: hidden;
+}
+
+.head-img {
+  max-height: 20rem;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1rem 0;
+  min-width: 14rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+.home {
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 2rem;
+}
+
+.home img {
+  height: 30px;
+  width: 30px;
+  background: #fff;
+}
