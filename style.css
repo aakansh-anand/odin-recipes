@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
@@ -24,7 +25,8 @@ body {
 }
 
 .head-img {
-  max-height: 20rem;
+  height: 20rem;
+  width: auto;
   display: block;
   margin: 0 auto;
   border: 2px solid white;
@@ -33,7 +35,8 @@ body {
 
 .container {
   display: flex;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   margin: 2rem;
 }
@@ -70,4 +73,53 @@ body {
   height: 30px;
   width: 30px;
   background: #fff;
+}
+
+.box {
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #fff;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.heading-secondary {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.ingredients {
+  list-style-type: circle;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 2rem;
+  display: grid;
+  grid-template-areas: ". .";
+}
+
+.instructions {
+  list-style-type: upper-roman;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 2rem;
+  display: grid;
+  grid-template-areas: ". .";
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .head-img {
+    width: 70%;
+  }
+  .box {
+    margin: 0 10%;
+  }
+
+  .ingredients,
+  .instructions {
+    grid-template-areas: ".";
+    margin-left: 10%;
+    padding-left: 0;
+  }
 }
